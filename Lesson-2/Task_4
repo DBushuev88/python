@@ -1,0 +1,11 @@
+take_str = input("введите строку ")
+my_word = []
+num = 1
+for a in range(take_str.count(' ') + 1):
+    my_word = take_str.split()
+    if len(str(my_word)) <= 10:
+        print(f" {num} {my_word [a]}")
+        num += 1
+    else:
+        print(f" {num} {my_word [a] [0:10]}")
+        num += 1
